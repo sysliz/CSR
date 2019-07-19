@@ -1,0 +1,46 @@
+INSERT INTO `nrp`.`NTS_FAULT_TYPE`
+(`FAULT_TYPE_ID`,
+`FALUT_TYPE_DESC`,
+`FAULT_TYPE_NAME`)
+VALUES
+(1,
+'Application Crashed',
+'Application Crashed'),
+(2,'Application stuck','Application Stuck');
+
+commit;
+
+
+
+INSERT INTO `nrp`.`NTS_USER_DETAILS`
+(`USER_ID`,
+`ADDRESS`,
+`CONTACT`,
+`EMAIL`,
+`FIRST_NAME`,
+`LAST_NAME`,
+`PASSWORD`,
+`STATUS`,
+`USER_NAME`,
+`ROLE_ID`)
+VALUES
+(1,
+'Chennai',
+7502434654,
+'Mark@strobs.com',
+'Mark',
+'Peter',
+'12345678',
+'active',
+'mark',
+1);
+
+
+INSERT INTO `nrp`.`NTS_ROLE`
+(`ROLE_ID`,
+`ROLE_DESCRIPTION`,
+`ROLE_NAME`)
+VALUES
+(1,
+'User',
+'User');
